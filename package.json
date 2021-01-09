@@ -1,0 +1,27 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "ICS4U Algo project in NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArsalKhan1/algorithms.git"
+  },
+  "keywords": [
+    "Algorithms",
+    "bubble",
+    "sort",
+    "insertion",
+    "sort",
+    "recursion"
+  ],
+  "author": "Arsal Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArsalKhan1/algorithms/issues"
+  },
+  "homepage": "https://github.com/ArsalKhan1/algorithms#readme"
+}
