@@ -2,6 +2,10 @@
 var datajson = require('./data/data.json')
 var bigdatajson = require('./data/bigdata.json')
 
+// import bubble and insertion sort algorithm functions from Javascript files
+var bubbleSort = require('./lib/sort/bubble');
+var insertionSort = require('./lib/sort/insertion');
+
 // import libs for command line options processing
 var program = require('commander');
 const prompts = require('prompts');
@@ -13,6 +17,32 @@ function parseHrtimeToSeconds(hrtime) {
     return seconds;
 }
 
+//bubble sort function
+function bubblesort_demo() {
+    console.log('------------Bubble Sort Section--------------')
+    // Sort
+    console.log('Unsorted Array');
+    // Print the unsorted one on console
+    console.log(datajson);
+    // call the Bubble Sort function and sort by score from ascending to descending
+    var sorted_datajson = bubbleSort(datajson);
+    console.log('Sorted Array from ascending to descending -- bubble sort');
+    // Print the sorted array with bubble sort
+    console.log(sorted_datajson);
+}
+//insertion sort function
+function insertionsort_demo() {
+    console.log('------------Insertion Sort Section--------------')
+    // Sort
+    console.log('Unsorted Array');
+    // Print the unsorted one on console
+    console.log(datajson);
+    // call the Insertion Sort function and sort by score from ascending to descending
+    var sorted_datajson = insertionSort(datajson);
+    console.log('Sorted Array from ascending to descending -- insertion sort');
+    // Print the sorted array with insertion sort
+    console.log(sorted_datajson);
+}
 
 //After input run mode from keyboard, execute the appropriate functions such as bubblesort_demo(), insertionsort_demo()
 (async () => {
@@ -28,11 +58,11 @@ function parseHrtimeToSeconds(hrtime) {
     });
     switch (response.value) {
         case 1:
-            //bubblesort_demo();
+            bubblesort_demo();
             rl.close();
             break;
         case 2:
-            //insertionsort_demo();
+            insertionsort_demo();
             rl.close();
             break;
         case 3:
