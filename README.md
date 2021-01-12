@@ -22,6 +22,7 @@ Execute following statements on command line at root project directory
 	6. Problem1  
 	7. Problem2  
 
+![Demo](data/demo.gif)  
 
 ## Data Preparation 
 1.	Created following object for this assignment  
