@@ -2,151 +2,151 @@
     {
         "id": 1,
         "name": "CD",
-        "score": 20
+        "score": 48
     },
     {
         "id": 2,
         "name": "Tire",
-        "score": 100
+        "score": 65
     },
     {
         "id": 3,
         "name": "Bicycle",
-        "score": 5
+        "score": 38
     },
     {
         "id": 4,
         "name": "Potato",
-        "score": 26
+        "score": 45
     },
     {
         "id": 5,
         "name": "Shirt",
-        "score": 54
+        "score": 25
     },
     {
         "id": 6,
         "name": "book",
-        "score": 78
+        "score": 80
     },
     {
         "id": 7,
         "name": "table",
-        "score": 6
+        "score": 68
     },
     {
         "id": 8,
         "name": "wheel",
-        "score": 72
+        "score": 81
     },
     {
         "id": 9,
         "name": "hose",
-        "score": 82
+        "score": 78
     },
     {
         "id": 10,
         "name": "glass",
-        "score": 62
+        "score": 89
     },
     {
         "id": 11,
         "name": "chewing gum",
-        "score": 76
+        "score": 13
     },
     {
         "id": 12,
         "name": "laptop",
-        "score": 90
+        "score": 11
     },
     {
         "id": 13,
         "name": "pencil",
-        "score": 34
+        "score": 75
     },
     {
         "id": 14,
         "name": "phone",
-        "score": 34
+        "score": 65
     },
     {
         "id": 15,
         "name": "charger",
-        "score": 62
+        "score": 59
     },
     {
         "id": 16,
         "name": "paper",
-        "score": 39
+        "score": 88
     },
     {
         "id": 17,
         "name": "cover",
-        "score": 27
+        "score": 92
     },
     {
         "id": 18,
         "name": "bin",
-        "score": 49
+        "score": 70
     },
     {
         "id": 19,
         "name": "printer",
-        "score": 3
+        "score": 33
     },
     {
         "id": 20,
         "name": "shades",
-        "score": 23
+        "score": 6
     },
     {
         "id": 21,
         "name": "monitor",
-        "score": 41
+        "score": 94
     },
     {
         "id": 22,
         "name": "calendar",
-        "score": 32
+        "score": 12
     },
     {
         "id": 23,
         "name": "pin",
-        "score": 7
+        "score": 49
     },
     {
         "id": 24,
         "name": "chair",
-        "score": 18
+        "score": 94
     },
     {
         "id": 25,
         "name": "bag",
-        "score": 3
+        "score": 53
     },
     {
         "id": 26,
         "name": "stone",
-        "score": 50
+        "score": 25
     },
     {
         "id": 27,
         "name": "nail",
-        "score": 29
+        "score": 80
     },
     {
         "id": 28,
         "name": "wood",
-        "score": 50
+        "score": 1
     },
     {
         "id": 29,
         "name": "tree",
-        "score": 100
+        "score": 21
     },
     {
         "id": 30,
         "name": "knife",
-        "score": 25
+        "score": 66
     }
 ]

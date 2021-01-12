@@ -23,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/ArsalKhan1/algorithms/issues"
   },
-  "homepage": "https://github.com/ArsalKhan1/algorithms#readme"
+  "homepage": "https://github.com/ArsalKhan1/algorithms#readme",
+  "dependencies": {
+    "commander": "*",
+    "fs": "*",
+    "link": "*",
+    "prompts": "^2.4.0"
+  }
 }
