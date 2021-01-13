@@ -6,14 +6,16 @@ It also demostrate the use of recursive vs iterative uses via 2 pratical problem
 1. If the user enters the integer number, will get the sum digits of the number.
 2. The application generates the palindromes from the inputed words with iterative, 
 
+![Demo](data/demo.gif)  
+
 ## How to run
 
 Execute following statements on command line at root project directory  
 
-### `npm install`
-### `npm link`
-### `node index.js`  
-	In next section, user can input the run mode from keyboard such as 1,2,3,4,5,6,7  
+- `npm install`
+- `npm link`
+- `node index.js`  
+- `Select Option from menu`  
 	1. Bubble Sort   
 	2. Insertion Sort   
 	3. Comparison Sorts  
@@ -59,8 +61,7 @@ The insertionsort_demo() in [index.js](index.js) executes following steps
 
 For the comparison, loaded [bigdata.json](bigdata.json) file using all three and recorded the time and observed that:
 - Bubble Sort is slow regarless of number of items in array.
-- Insertion sort is comparable to in-built sort but looks like inbuild sort switch algorithm based on the size and is almost always is faster but not consistently.  
-
+- Insertion sort is fastest on at least NodeJS platform.  
 - Following is the visualization of above experiment   
 - ![comparison](data/sortcomparison.png)
 
@@ -83,6 +84,16 @@ The binarysearch_demo() in [index.js](index.js) executes following steps:
 3.	Prints the sorted array on console
 4.	Calls the Binary search function and display the position on console. -1 if not found.
 
+### Comparison of Linear, Binary and built-in searches
+
+For the comparison, loaded [bigdata.json](bigdata.json) file using all three and recorded the time and observed that:
+- Linear is slowest as it just goes in sequence 
+- Binary is fast but keep in mind the cost of sorting before using this. It is still very fast
+- The in-built one was fastest regardless of number size and tries. 
+- Following is the visualization of above experiment   
+- ![comparison](data/searchcomparison.png)
+
+
 ## Recusion
 
 ### Problem 1
@@ -95,6 +106,25 @@ The code is in [lib/rcusrsion/problem2_iterative.js](lib/rcusrsion/problem1_iter
 
 - The problem2_demo() in [index.js](index.js) takes the input from console and display the counts and number of combinations on console using both iterative and recursive approach.  
  
+### Question and Answer
+1. What are some common pitfalls of recursion?   
+    Simplye it's infinite cycle. If there are no appropriate return statement, the recursion function will be fall in infinite cycle.  
+    
+    Recursion, broadly speaking, has the following disadvantages:  
+    -A recursive program has greater space requirements than an iterative program 
+    as each function call will remain in the stack until the base case is reached.  
+    -It also has greater time requirements because each time the function is called, 
+    the stack grows and the final answer is returned when the stack is popped completely.  
+  
+    On the other hand, recursion has the following advantages  
+    -For a recursive function, you only need to define the base case and recursive case, 
+    so the code is simpler and shorter than an iterative code.  
+    -Some problems are inherently recursive, such as Graph and Tree Traversal.  
+
+2. What issues did you run into during your development of the below algorithms?  
+    -should be careful not to fall into infinite cycle, so I made the below if statements in the recursion function  
+        if (n == 0)  
+            return 0;
  
 ## Citation and Credits
 
