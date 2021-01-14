@@ -74,7 +74,7 @@ The linearsearch_demo() in [index.js](index.js) executes following steps:
 
 1.	Loads data from data.json in an array of objects
 2.	Prints the unsorted one on console
-3.	Calls the binary search function and displays the position on console. If not found, -1.
+3.	Calls the linear search function and displays the position on console. If not found, -1.
 
 ### Binary Search
 The code is in [lib/search/binary.js](lib/search/binary.js)  
