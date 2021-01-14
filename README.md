@@ -109,17 +109,16 @@ The code is in [lib/problem/problem2_iterative.js](lib/problem/problem2_iterativ
  
 ### Question and Answer
 1. What are some common pitfalls of recursion?   
-    Simply it's infinite cycle. If there is no appropriate return statement, the recursion function will fall in infinite cycle.  
+    Simply it's an infinite cycle. If there is no appropriate return statement, the recursion function will fall into an infinite cycle. This infinite recursion can cause the system to crash. 
     
     Recursion, broadly speaking, has the following disadvantages:  
     -A recursive program has greater space requirements than an iterative program 
     as each function call will remain in the stack until the base case is reached.  
     -It also has greater time requirements because each time the function is called, 
     the stack grows and the final answer is returned when the stack is popped completely.  
-  
-    On the other hand, recursion has the following advantages:
-    -For a recursive function, you only need to define the base case and recursive case, 
-    so the code is simpler and shorter than an iterative code.  
+    
+    On the other hand, recursion has the following advantages:	
+    -For a recursive function, you only need to define the base case and recursive case, so the code is simpler and shorter than an iterative code.  
     -Some problems are inherently recursive, such as Graph and Tree Traversal.  
 
 2. What issues did you run into during your development of the below algorithms?  
