@@ -95,7 +95,7 @@ For the comparison, loaded [data/bigdata.json](data/bigdata.json) file using all
 - ![comparison](data/searchcomparison.png)
 
 
-## Recusion
+## Recursion
 
 ### Problem 1
 The code is in [lib/problem/problem1_iterative.js](lib/problem/problem1_iterative.js) and in [lib/problem/problem1_recursive.js](lib/problem/problem1_recursive.js)
