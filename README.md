@@ -103,7 +103,7 @@ The code is in [lib/problem/problem1_iterative.js](lib/problem/problem1_iterativ
 - The problem1_demo() in [index.js](index.js) takes the input from console, and then displays the results using both the iterative and recursive approach.
  
 ### Problem 2
-The code is in [lib/problem/problem12_iterative.js](lib/problem/problem2_iterative.js) and in [lib/problem/problem2_recursive.js](lib/problem/problem2_recursive.js)
+The code is in [lib/problem/problem2_iterative.js](lib/problem/problem2_iterative.js) and in [lib/problem/problem2_recursive.js](lib/problem/problem2_recursive.js)
 
 - The problem2_demo() in [index.js](index.js) takes the input from console, and then displays the counts and number of combinations on console using both the iterative and recursive approach.  
  
