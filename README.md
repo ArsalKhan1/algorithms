@@ -1,6 +1,6 @@
 # Algorithms
 
-The program implements object sorting via `Bubble` and `Insertion` sort algorithms. It  also searches for the objects within unsorted and sorted array using `linear` and `binary` searches. It also compares the results those you can see in [SortComparison](data/sortcomparison.png) and [Search Comparisons](data/searchcomparison.png)  
+The program implements object sorting via `Bubble` and `Insertion` sort algorithms. It  also searches for the objects within unsorted and sorted array using `linear` and `binary` searches. It also compares the results that you can see in [SortComparison](data/sortcomparison.png) and [Search Comparisons](data/searchcomparison.png)  
 
 It also demostrate the use of recursive vs iterative uses via 2 pratical problems
 1. If the user enters the integer number, will get the sum digits of the number.
