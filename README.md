@@ -69,25 +69,30 @@ For the comparison, loaded [data/bigdata.json](data/bigdata.json) file using all
 ### Video Questions and Answers
 
 What do you notice about the searches that have the thin bars vs. those with the thicker bars?
-- The searches that have thicker bars are used for relatively slower algorithms that use smaller sets of data such as Bubble Sort, Selection Sort, and Cocktail Shaker Sort.
-	- Causes the number of arrays accessed to be lower.
-- The searches that have thinner bars are used for relatively faster algorithms that use smaller sets of data such as Quick Sort, Heap Sort, and std::sort (gc).
-	- Causes the number of arrays accessed to be higher.
+- The searches that have thicker bars are 
+	- Used for relatively slower algorithms that use smaller sets of data such as Bubble Sort, Selection Sort, and Cocktail Shaker Sort
+	- Generally less efficient since they are sorting lesser data in around the same amount of time
+	- Typically used to sort element by element
+- The searches that have thinner bars are
+	- Used for relatively faster algorithms that use smaller sets of data such as Quick Sort, Heap Sort, and std::sort (gc).
+	- Generally more efficient since they are sorting more data in around the same amount of time
+	- Typically used to sort through the divide-and-conquer strategy
 
 Why would someone make this video?
-- To compare the different types of sorting algorithms based on:
-	- Their speeds
-	- The different processes sorting algorithms go through
-- To provide a visualization on how certain sorting algorithms sort through data
+- To compare the different types of sorting algorithms and the processes different sorting algorithms go through
+- To provide a visualization of how certain sorting algorithms sort through data in real-time
+- It shows the computation complexity of the algorithms based on how fast they complete the sort. This is not a clear indicator because of the variance of data and delay.
 
 How could this video be skewed to show something that is incorrect?
-1. The video could be played faster or slower
-	- If played faster, the sorting function would falsely be shown as more efficient.
-2. Only one sample of data is shown
+1. The amount of data required to sort through and the delay time could vary
+	- Larger amounts of data take longer to sort and the delay time indicates how long the system delays after each array access.
+	- If a larger amount of data or longer delay time were presented, it could cause a misrepresentation of the speed of the sorting algorithm.
+2. The video speed is changed
+	- If played faster, the sorting function would falsely be shown as more efficient than it really is.
+3. Only one sample of data is shown
 	- The number of comparisons differs every time the function is used. With a lower number of comparisons shown, a sorting algorithm could be shown as more efficient in
 	comparison to when more comparisons are required.
 	- A larger sample of data should be used to calculate the efficiency of sorting algorithms.
-
 
 ## Search
 
