@@ -1,10 +1,10 @@
 # Algorithms
 
-The program implements object sorting via `Bubble` and `Insertion` sort algorithms. It  also searches for the objects within unsorted and sorted arrays using `linear` and `binary` searches. It also compares the results that you can see in [SortComparison](data/sortcomparison.png) and [Search Comparisons](data/searchcomparison.png)  
+The program implements object sorting via `Bubble` and `Insertion` sort algorithms. It  also searches for the objects within unsorted and sorted arrays using `linear` and `binary` searches. It compares the results that you can see in [SortComparison](data/sortcomparison.png) and [Search Comparisons](data/searchcomparison.png).
 
-It demostrates the use of recursive vs iterative uses through 2 practical problems:
-1. If the user enters the integer number, the output will be the sum of the digits of the number.
-2. The application generates the palindromes from the inputed words with iterative. 
+It demostrates the use of recursive vs iterative functions through 2 practical problems:
+1. If the user enters an integer number, the output will be the sum of the digits of the number.
+2. The application generates the palindromes from the inputed words. 
 
 ![Demo](data/demo.gif)  
 
@@ -44,9 +44,9 @@ Execute following statements on the command line at the root project directory:
 The code is in [lib/sort/bubble.js](lib/sort/bubble.js)  
 The bubblesort_demo() in [index.js](index.js) executes following steps
 
-1.	Loads data from data.json  in an array of objects
+1.	Loads data from data.json in an array of objects
 2.  Prints the unsorted one on console
-3.	Calls the Bubble Sort function and sort by score from ascending to descending
+3.	Calls the Bubble Sort function and sort by score from ascending to descending order
 4.	Prints the sorted array
 
 ### Insertion Sort
@@ -55,23 +55,23 @@ The insertionsort_demo() in [index.js](index.js) executes following steps
 
 1.	Loads data from data.json  in an array of objects
 2.  Prints the unsorted one on console
-3.	Calls the Insertion Sort function and sort by score from ascending to descending
+3.	Calls the Insertion Sort function and sort by score from ascending to descending order
 4.	Prints the sorted array
 
 ### Comparison of Bubble, Insertion and built-in sort
 
-For the comparison, loaded [data/bigdata.json](data/bigdata.json) file using all three and recorded the time and observed that:
-- Bubble Sort is slow regarless of number of items in array.
-- Insertion sort is fastest on at least NodeJS platform.  
-- Following is the visualization of above experiment   
+For the comparison, loaded [data/bigdata.json](data/bigdata.json) file using all three functions and recorded the time and observed that:
+- Bubble Sort is slow regardless of the number of items in the array.
+- Insertion Sort is fastest on at least NodeJS platform.  
+- The following is the visualization of the above experiment   
 - ![comparison](data/sortcomparison.png)
 
 ### Video Questions and Answers
 
 What do you notice about the searches that have the thin bars vs. those with the thicker bars?
-- The searches that have thicker bars are used for relatively slower algorithms that use smaller sets of data such as bubble sort, selection sort, and cocktail shaker sort.
+- The searches that have thicker bars are used for relatively slower algorithms that use smaller sets of data such as Bubble Sort, Selection Sort, and Cocktail Shaker Sort.
 	- Causes the number of arrays accessed to be lower.
-- The searches that have thinner bars are used for relatively faster algorithms that use smaller sets of data such as quick sort, heap sort, and std::sort (gc).
+- The searches that have thinner bars are used for relatively faster algorithms that use smaller sets of data such as Quick Sort, Heap Sort, and std::sort (gc).
 	- Causes the number of arrays accessed to be higher.
 
 Why would someone make this video?
@@ -93,7 +93,7 @@ How could this video be skewed to show something that is incorrect?
 
 ### Linear Search
 The code is in [lib/search/linear.js](lib/search/linear.js)  
-The linearsearch_demo() in [index.js](index.js) executes following steps:  
+The linearsearch_demo() in [index.js](index.js) executes following steps  
 
 1.	Loads data from data.json in an array of objects
 2.	Prints the unsorted one on console
@@ -101,7 +101,7 @@ The linearsearch_demo() in [index.js](index.js) executes following steps:
 
 ### Binary Search
 The code is in [lib/search/binary.js](lib/search/binary.js)  
-The binarysearch_demo() in [index.js](index.js) executes following steps:  
+The binarysearch_demo() in [index.js](index.js) executes following steps  
 
 1.	Loads data from data.json in an array of objects
 2.  Sorts the data using the Insertion sort function
@@ -111,10 +111,10 @@ The binarysearch_demo() in [index.js](index.js) executes following steps:
 ### Comparison of Linear, Binary and built-in searches
 
 For the comparison, loaded [data/bigdata.json](data/bigdata.json) file using all three and recorded the time and observed that:
-- Linear is slowest as it just goes in sequence 
-- Binary is fast but keep in mind the cost of sorting before using this. It is still very fast
-- The in-built one was fastest regardless of number size and tries. 
-- Following is the visualization of above experiment   
+- Linear is the slowest as it just goes in a sequence 
+- Binary is fast but keep in mind the cost of sorting before using this. It is still very fast.
+- The in-built one was the fastest regardless of the number size and tries. 
+- Following is the visualization of the above experiment   
 - ![comparison](data/searchcomparison.png)
 
 
@@ -132,20 +132,15 @@ The code is in [lib/problem/problem2_iterative.js](lib/problem/problem2_iterativ
  
 ### Recursion Questions and Answers
 1. What are some common pitfalls of recursion?   
-    Simply it's an infinite cycle. If there is no appropriate return statement, the recursion function will fall into an infinite cycle. This infinite recursion can cause the system to crash. 
-    
-    Recursion, broadly speaking, has the following disadvantages:  
+    - Simply it's an infinite cycle. If there is no appropriate return statement, the recursion function will fall into an infinite cycle. This infinite recursion can cause
+    the system to crash.  
     - A recursive program has greater space requirements than an iterative program 
     as each function call will remain in the stack until the base case is reached.  
     - It also has greater time requirements because each time the function is called, 
     the stack grows and the final answer is returned when the stack is popped completely.  
     
-    On the other hand, recursion has the following advantages:	
-    - For a recursive function, you only need to define the base case and recursive case, so the code is simpler and shorter than an iterative code.  
-    - Some problems are inherently recursive, such as Graph and Tree Traversal.  
-
 2. What issues did you run into during your development of the below algorithms?  
-    - Should be careful not to fall into infinite cycle, so I made the below if statements in the recursion function  
+    - I had to be careful not to fall into infinite cycle, so I made the below if statement in the recursion function  
         if (n == 0)  
             return 0;
  
