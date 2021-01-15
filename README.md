@@ -132,7 +132,7 @@ The code is in [lib/problem/problem2_iterative.js](lib/problem/problem2_iterativ
  
 ### Recursion Questions and Answers
 1. What are some common pitfalls of recursion?   
-    - Simply it's an infinite cycle. If there is no appropriate return statement, the recursion function will fall into an infinite cycle. This infinite recursion can cause
+    - Simply, it's an infinite cycle. If there is no appropriate return statement, the recursion function will fall into an infinite cycle. This infinite recursion can cause
     the system to crash.  
     - A recursive program has greater space requirements than an iterative program 
     as each function call will remain in the stack until the base case is reached.  
