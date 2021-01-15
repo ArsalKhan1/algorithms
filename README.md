@@ -66,6 +66,29 @@ For the comparison, loaded [data/bigdata.json](data/bigdata.json) file using all
 - Following is the visualization of above experiment   
 - ![comparison](data/sortcomparison.png)
 
+### Video Questions and Answers
+
+What do you notice about the searches that have the thin bars vs. those with the thicker bars?
+- The searches that have thicker bars are used for relatively slower algorithms that use smaller sets of data such as bubble sort, selection sort, and cocktail shaker sort.
+	- Causes the number of arrays accessed to be lower.
+- The searches that have thinner bars are used for relatively faster algorithms that use smaller sets of data such as quick sort, heap sort, and std::sort (gc).
+	- Causes the number of arrays accessed to be higher.
+
+Why would someone make this video?
+- To compare the different types of sorting algorithms based on:
+	- Their speeds
+	- The different processes sorting algorithms go through
+- To provide a visualization on how certain sorting algorithms sort through data
+
+How could this video be skewed to show something that is incorrect?
+1. The video could be played faster or slower
+	- If played faster, the sorting function would falsely be shown as more efficient.
+2. Only one sample of data is shown
+	- The number of comparisons differs every time the function is used. With a lower number of comparisons shown, a sorting algorithm could be shown as more efficient in
+	comparison to when more comparisons are required.
+	- A larger sample of data should be used to calculate the efficiency of sorting algorithms.
+
+
 ## Search
 
 ### Linear Search
@@ -81,7 +104,7 @@ The code is in [lib/search/binary.js](lib/search/binary.js)
 The binarysearch_demo() in [index.js](index.js) executes following steps:  
 
 1.	Loads data from data.json in an array of objects
-2.  Sorts the data using Insertion sort function
+2.  Sorts the data using the Insertion sort function
 3.	Prints the sorted array on console
 4.	Calls the Binary search function and display the position on console. If not found, -1.
 
@@ -107,22 +130,22 @@ The code is in [lib/problem/problem2_iterative.js](lib/problem/problem2_iterativ
 
 - The problem2_demo() in [index.js](index.js) takes the input from console, and then displays the counts and number of combinations on console using both the iterative and recursive approach.  
  
-### Question and Answer
+### Recursion Questions and Answers
 1. What are some common pitfalls of recursion?   
     Simply it's an infinite cycle. If there is no appropriate return statement, the recursion function will fall into an infinite cycle. This infinite recursion can cause the system to crash. 
     
     Recursion, broadly speaking, has the following disadvantages:  
-    -A recursive program has greater space requirements than an iterative program 
+    - A recursive program has greater space requirements than an iterative program 
     as each function call will remain in the stack until the base case is reached.  
-    -It also has greater time requirements because each time the function is called, 
+    - It also has greater time requirements because each time the function is called, 
     the stack grows and the final answer is returned when the stack is popped completely.  
     
     On the other hand, recursion has the following advantages:	
-    -For a recursive function, you only need to define the base case and recursive case, so the code is simpler and shorter than an iterative code.  
-    -Some problems are inherently recursive, such as Graph and Tree Traversal.  
+    - For a recursive function, you only need to define the base case and recursive case, so the code is simpler and shorter than an iterative code.  
+    - Some problems are inherently recursive, such as Graph and Tree Traversal.  
 
 2. What issues did you run into during your development of the below algorithms?  
-    -Should be careful not to fall into infinite cycle, so I made the below if statements in the recursion function  
+    - Should be careful not to fall into infinite cycle, so I made the below if statements in the recursion function  
         if (n == 0)  
             return 0;
  
