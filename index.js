@@ -167,7 +167,7 @@ function problem2_demo(inputWord) {
             break;
         case 7:
             rl.question("Please input the Word : ", function (inputNum) {
-                problem2_demo(inputNum);
+                problem2_demo(inputNum.toUpperCase());
                 rl.close();
             });
             break;
