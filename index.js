@@ -96,12 +96,14 @@ function linearsearch_demo() {
 function binarysearch_demo() {
     // Binary Search
     console.log('------------Binary Search Section--------------')
-    console.log('Unsorted Array');
-    // Print the unsorted one on console
-    console.log(datajson);
+
+    //console.log(datajson);
+    var sorted_datajson = insertionSort(datajson);
     var searchScore = datajson[5].score;
+    console.log(datajson);
+    console.log("The binary search will search for score :" + searchScore)
     // call the binarySearch function and search by score
-    var findedID = binarySearch(datajson, searchScore);
+    var findedID = binarySearch(sorted_datajson, searchScore);
     // Print the ID of object from search result
     if (findedID != - 1)
         console.log('binarySearch->Searched ID(score = ', searchScore, ') = ', datajson[findedID]);
